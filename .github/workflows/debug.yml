@@ -12,8 +12,8 @@ jobs:
          distribution: 'adopt'
      - name: Setup Debug Session
        uses: csexton/debugger-action@master
-     - name: Archive Leaves Paperclip
+     - name: Archive Debug file
        uses: actions/upload-artifact@v2
        with:
-         name: Leaves
-         path: Leaves/.gradle/caches/paperweight/upstreams/paper/.gradle/caches/paperweight/taskCache/spigotDecompileJar.jar
+         name: Debug
+         path: debug.tar.gz
